@@ -75,7 +75,13 @@ const gridImages = Array.from({ length: 30 }, (_, i) => `/grid-background/${i + 
       <div class="overlay"></div>
       <button class="cta-button">COMPRUÉBALO</button>
     </section>
-    
+
+    <section id="we-know" class="we-know">
+      <div class="we-know-content">
+        <h4>En <span>my</span>brand nos apasiona analizar, imaginar, crear y definir estilos de comunicación que posicionarán tu marca.</h4>
+      </div>
+    </section>
+
     <section class="nosotros" id="nosotros">
       <div class="nosotros-content">
         <div class="nosotros-text">
@@ -278,6 +284,17 @@ nav a {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 45px;
+}
+
+.we-know h4 {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 27px;
+}
+
+.we-know span {
+  font-weight: 500;
+  color: #000000;
 }
 
 .grid-background {
