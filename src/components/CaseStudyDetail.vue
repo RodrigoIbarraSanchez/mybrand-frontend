@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+
+import Contact from './Contact.vue'
+
 import bocetosAbsolook from '../assets/BOCETOS ABSOLOOK.png'
 import anuncioLuminoso from '../assets/ANUNCIO LUMINOSO BIOTECH.png'
 import absolook from '../assets/ABSOLOOK-07.png'
@@ -59,11 +62,39 @@ const prevSlide = () => {
     </div>
   </section>
 
-  <section class="wooden-logo-section">
-    <div class="wooden-logo">
+  <section class="paragraph-section">
+    <h2>PRESENTAMOS</h2>
+    <p>Suaves líneas que transmiten confianza para quien decide cambiar su imagen, con un estilo fresco y audaz que transmita seguridad a quien transforma absolutamente su look.</p>
+  </section>
+
+  <section class="banner-secton">
+    <div class="banner-section-container">
       <img src="../assets/ABSOLOOK-07-banner.png" alt="Absolook wooden logo" />
     </div>
   </section>
+  
+  <section class="two-images-secton">
+    <img src="../assets/two-image-1.png" alt="Absolook wooden logo" />
+    <img src="../assets/two-image-2.png" alt="Absolook wooden logo" />
+  </section>
+  
+  <section class="banner-secton">
+    <div class="banner-section-container">
+      <img src="../assets/ABSOLOOK-07-banner-2.png" alt="Absolook wooden logo" />
+    </div>
+  </section>
+
+  <section class="two-images-secton">
+    <img src="../assets/two-image-3.png" alt="Absolook wooden logo" />
+    <img src="../assets/two-image-4.png" alt="Absolook wooden logo" />
+  </section>
+
+  <section class="bottom-text-container">
+    <h2 class="bottom-phrase">“El significado de un logo deriva de la calidad de aquello que simboliza”</h2>
+    <p>- PaulRand</p>
+  </section>
+
+  <Contact />
 </template>
 
 <style scoped>
@@ -188,18 +219,60 @@ const prevSlide = () => {
   background-color: white;
 }
 
-.wooden-logo-section {
+.banner-secton {
   background-color: white;
-  padding: 4rem 0;
 }
 
-.wooden-logo {
+.paragraph-section {
+  padding: 50px 300px;
+  text-align: center;
+}
+
+.paragraph-section h2 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+}
+
+.paragraph-section p {
+  font-weight: 200;
+}
+
+.banner-section-container {
   width: 100%;
 }
 
-.wooden-logo img {
+.banner-section-container img {
   width: 100%;
   height: auto;
   display: block;
 }
+
+.two-images-secton {
+  display: flex;
+  flex-direction: row;
+}
+
+.two-images-secton img {
+  width: 50%;
+}
+
+.bottom-text-container {
+  padding: 50px 250px;
+  text-align: center;
+  margin-bottom: -190px;
+}
+
+.bottom-text-container p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.bottom-phrase {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 40px;
+  font-weight: 200;
+}
+
+
 </style>
