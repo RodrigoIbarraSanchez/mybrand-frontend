@@ -117,7 +117,56 @@ const gridImages = Array.from({ length: 30 }, (_, i) => `/grid-background/${i + 
         </div>
       </div>
     </section>
+
+    <section id="contacto" class="contact">
+      <div class="contact-container">
+        <div class="contact-left">
+          <div class="contact-content">
+            <h2>Contáctanos</h2>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Correo electrónico</label>
+              <input type="email" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Mensaje</label>
+              <textarea required></textarea>
+            </div>
+            <button type="submit" class="submit-button">ENVIAR</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <img :src="mainLogo" alt="MyBrand logo" class="footer-logo" />
+        <p class="copyright">Derechos Reservados 2021</p>
+      </div>
+      <div class="footer-right">
+        <div class="contact-info">
+          <p>Tel: 55 55 55 55 55</p>
+          <p>Mail: hola@mybrand.com</p>
+          <div class="footer-links">
+            <a href="#">Aviso de Privacidad</a>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="facebook">Facebook</a>
+          <a href="#" class="instagram">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <style>
@@ -489,6 +538,157 @@ nav a {
   font-weight: 300;
   font-size: 18px;
   color: #666666;
+}
+
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-container {
+  display: flex;
+  min-height: 600px;
+  padding: 200px;
+}
+
+.contact-left {
+  flex: 1;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url('./assets/mega-iconB-line.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -120px;
+}
+
+.contact-left h2 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 42px;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.contact-right {
+  flex: 1;
+  background-color: white;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0;
+  background-color: #E0E0E0;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-button {
+  width: 55%;
+  padding: 1rem;
+  background-color: transparent;
+  border: solid 2px black;
+  color: #000000;
+  border-radius: 0;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #e6c300;
+  border: none;
+}
+
+.footer {
+  background-color: white;
+  padding: 4rem 2rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+}
+
+.copyright {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #666666;
+}
+
+.footer-right {
+  display: flex;
+  gap: 4rem;
+  text-align: left;
+}
+
+.contact-info p {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.footer .social-links {
+  display: flex;
+  gap: 1rem;
 }
 </style>
 
