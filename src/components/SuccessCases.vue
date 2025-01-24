@@ -1,18 +1,23 @@
+<script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
+</script>
+
 <template>
   <section class="success-cases">
     <h2>Casos de éxito</h2>
     <div class="cases-grid">
-      <div class="case-item">
+      <div class="case-item" @click="router.push('/case-study/absolook')">
         <img src="../assets/ABSOLOOK-07.png" alt="Multiple lightbulb designs" />
         <h3>Absolook</h3>
         <p>Beauty</p>
       </div>
-      <div class="case-item">
+      <div class="case-item" @click="router.push('/case-study/biotechlives')">
         <img src="../assets/ANUNCIO LUMINOSO BIOTECH.png" alt="Biotech luminous sign" />
         <h3>Biotechlives</h3>
         <p>Medical</p>
       </div>
-      <div class="case-item">
+      <div class="case-item" @click="router.push('/case-study/skinbrand')">
         <img src="../assets/multiple-lightbulb-designs.png" alt="Absolook design" />
         <h3>Skin brand</h3>
         <p>Medical</p>

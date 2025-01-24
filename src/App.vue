@@ -11,14 +11,19 @@ import Footer from './components/Footer.vue'
 
 <template>
   <TopNav />
-  <main>
-    <Hero />
-    <Services />
-    <WeKnow />
-    <About />
-    <SuccessCases />
-    <Contact />
-  </main>
+  <router-view v-slot="{ Component }">
+    <component :is="Component" v-if="$route.name === 'case-study'" />
+    <template v-else>
+      <main>
+        <Hero />
+        <Services />
+        <WeKnow />
+        <About />
+        <SuccessCases />
+        <Contact />
+      </main>
+    </template>
+  </router-view>
   <Footer />
 </template>
 
