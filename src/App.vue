@@ -12,7 +12,7 @@ import Footer from './components/Footer.vue'
 <template>
   <TopNav />
   <router-view v-slot="{ Component }">
-    <component :is="Component" v-if="$route.name === 'case-study'" />
+    <component :is="Component" v-if="['case-study', 'login', 'dashboard'].includes($route.name)" />
     <template v-else>
       <main>
         <Hero />
@@ -24,7 +24,7 @@ import Footer from './components/Footer.vue'
       </main>
     </template>
   </router-view>
-  <Footer />
+  <Footer v-if="$route.name === 'home'" />
 </template>
 
 <style>
