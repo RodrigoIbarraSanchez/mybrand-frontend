@@ -149,7 +149,6 @@ const submitForm = async (e) => {
   border: none;
   border-radius: 0;
   background-color: #E0E0E0;
-  font-family: 'Montserrat';
   font-size: 16px;
   border-radius: 8px;
   margin-top: 10px;
@@ -167,7 +166,6 @@ const submitForm = async (e) => {
   border: solid 2px black;
   color: #000000;
   border-radius: 0;
-  font-family: 'Montserrat';
   font-weight: 500;
   font-size: 18px;
   cursor: pointer;

@@ -52,7 +52,6 @@ nav {
 nav a {
   text-decoration: none;
   color: #000000;
-  font-family: 'Montserrat';
   font-weight: 300;
   font-size: 17px;
   cursor: pointer;

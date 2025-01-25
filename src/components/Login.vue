@@ -88,7 +88,6 @@ const handleLogin = async (e) => {
 .login-form h2 {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: 'Montserrat';
   font-weight: 500;
 }
 
@@ -99,7 +98,6 @@ const handleLogin = async (e) => {
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
-  font-family: 'Montserrat';
 }
 
 .form-group input {
@@ -107,7 +105,6 @@ const handleLogin = async (e) => {
   padding: 0.75rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-family: 'Montserrat';
 }
 
 .login-button {
@@ -117,7 +114,6 @@ const handleLogin = async (e) => {
   border: none;
   border-radius: 4px;
   color: black;
-  font-family: 'Montserrat';
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -136,6 +132,5 @@ const handleLogin = async (e) => {
   color: #dc3545;
   margin-bottom: 1rem;
   text-align: center;
-  font-family: 'Montserrat';
 }
 </style>
